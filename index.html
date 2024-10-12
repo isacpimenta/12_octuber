@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 of octuber | i²</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div>
+            <img src="assets/img/01.jpg" alt="">
+        </div>
+        <div id="ct_btns">
+            <button><i class="fa-solid fa-envelope-open-text"></i>CARTA ABERTA</button>
+            <button><i class="fa-regular fa-image"></i>ÁLBUM</button>
+            <button><i class="fa-solid fa-lock"></i>NÃO CLIQUE</button>
+        </div>
+    </main>
+    <div id="pré-loader">
+        <img src="assets/img/logo.png" alt="">
+    </div>
+
+    <script>
+        // Get the preloader element
+        const preloader = document.getElementById('pré-loader');
+
+        // Add an event listener to the window's load event
+        window.addEventListener('load', () => {
+        // Remove the preloader element after 1 second
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 5000);
+        });
+    </script>
+</body>
+</html>
