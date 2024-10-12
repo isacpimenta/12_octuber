@@ -53,6 +53,7 @@ i {
 }
 
 .swiper-container {
+    position: relative;
     width: 20vw;
     height: 48vh;
     overflow: hidden;
@@ -64,6 +65,22 @@ i {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: black; /* Altere a cor conforme necessário */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    z-index: 10; /* Mantém as setas acima do conteúdo */
+}
+
+.swiper-button-next {
+    right: 10px; /* Ajuste a posição para ficar próximo ao conteúdo */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Ajuste a posição para ficar próximo ao conteúdo */
 }
 
 @media (max-width: 768px) {
