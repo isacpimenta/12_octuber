@@ -10,8 +10,9 @@
 
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
+
+    transform: translateY(10%);
 
     min-height: 100vh;
 
@@ -25,7 +26,8 @@ main {
     justify-content: center;
     margin: 20px 0;
 
-    padding: 50px;
+    max-height: 60vh;
+    padding: 0 50px;
     border-radius: 5px;
 
     background-color: white;
@@ -48,10 +50,6 @@ main img{
     padding: 20px;
 }
 
-i {
-    margin-right: 7px;
-}
-
 .swiper-container {
     position: relative;
     width: 20vw;
@@ -65,12 +63,7 @@ i {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.swiper-slide-active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 38vh;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -89,11 +82,17 @@ i {
     left: 30px; /* Aumente o valor para afastar mais */
 }
 
+#btn_exit {
+    background-color: blueviolet;
+    padding: 5px 7px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     main {
-        padding: 40px 0 0 0;
-        min-width: 400px;
-        min-height: 400px;
+        max-height: 60vh;
+        max-width: 80vw;
     }   
 
     .swiper-container {

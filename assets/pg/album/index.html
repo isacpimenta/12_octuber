@@ -49,6 +49,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+        <div id="btn_exit" onclick="exit()"><i class="fa-solid fa-angles-left"></i></div>
     </main>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -64,6 +65,10 @@
                 clickable: true,
             },
         });
+
+        function exit(){
+            window.location.href = "../../../index.html";
+        }
     
         // Função para verificar se é o primeiro slide
         function updateNavigationButtons() {
