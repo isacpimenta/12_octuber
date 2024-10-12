@@ -76,15 +76,25 @@ i {
 }
 
 .swiper-button-next {
-    right: 10px; /* Ajuste a posição para ficar próximo ao conteúdo */
+    right: 30px; /* Aumente o valor para afastar mais */
 }
 
 .swiper-button-prev {
-    left: 10px; /* Ajuste a posição para ficar próximo ao conteúdo */
+    left: 30px; /* Aumente o valor para afastar mais */
 }
 
 @media (max-width: 768px) {
     main {
-        padding: 250px 25px;
+        padding: 8vh 10vw;
     }   
+
+    .swiper-container {
+        width: 75vw; /* Largura maior em dispositivos móveis */
+        height: 48vh; /* Ajuste a altura se necessário */
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        right: 15px; /* Ajuste a posição das setas */
+        left: 15px; /* Ajuste a posição das setas */
+    }
 }
