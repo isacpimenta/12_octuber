@@ -91,7 +91,9 @@ i {
 
 @media (max-width: 768px) {
     main {
-        padding: 0;
+        padding: 40px 0 0 0;
+        min-width: 400px;
+        min-height: 400px;
     }   
 
     .swiper-container {
@@ -100,7 +102,7 @@ i {
     }
 
     .swiper-button-next, .swiper-button-prev {
-        right: 15px; /* Ajuste a posição das setas */
-        left: 15px; /* Ajuste a posição das setas */
+        right: 65px; /* Ajuste a posição das setas */
+        left: 65px; /* Ajuste a posição das setas */
     }
 }
