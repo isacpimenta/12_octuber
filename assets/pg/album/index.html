@@ -54,7 +54,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper-container', {
-            // Opcional: você pode adicionar opções de configuração aqui
             loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -65,6 +64,26 @@
                 clickable: true,
             },
         });
+    
+        // Função para verificar se é o primeiro slide
+        function updateNavigationButtons() {
+            const prevButton = document.querySelector('.swiper-button-prev');
+            const activeIndex = swiper.realIndex; // Obter o índice real do slide
+    
+            // Desabilitar o botão de voltar se for o primeiro slide
+            if (activeIndex === 0) {
+                prevButton.classList.add('swiper-button-disabled');
+                prevButton.setAttribute('aria-disabled', 'true');
+            } else {
+                prevButton.classList.remove('swiper-button-disabled');
+                prevButton.setAttribute('aria-disabled', 'false');
+            }
+        }
+    
+        // Atualiza os botões na inicialização e ao mudar de slide
+        swiper.on('slideChange', updateNavigationButtons);
+        updateNavigationButtons(); // Chama na inicialização
     </script>
+    
 </body>
 </html>
