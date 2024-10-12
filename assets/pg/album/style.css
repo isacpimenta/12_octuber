@@ -67,6 +67,12 @@ i {
     text-align: center;
 }
 
+.swiper-slide-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .swiper-button-next, .swiper-button-prev {
     color: black; /* Altere a cor conforme necessário */
     position: absolute;
@@ -85,7 +91,7 @@ i {
 
 @media (max-width: 768px) {
     main {
-        padding: 8vh 10vw;
+        padding: 0;
     }   
 
     .swiper-container {
